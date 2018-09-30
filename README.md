@@ -3,6 +3,7 @@ A simple php script that allows you to generate iCal files that can be imported 
 
 ## Usage example ##
 
+```
 require_once("ICal.class.php");
 
 // Configure the ical instance
@@ -42,3 +43,4 @@ if ($ical->save($exportFilename)) {
 } else {
     echo sprintf("Could not export file %s. Please check your file permissions and try it again.\n", $exportFilename);
 }
+```
